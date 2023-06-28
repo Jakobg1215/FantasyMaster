@@ -55,7 +55,7 @@ class CommandManager {
         });
 
         // Load all alises commands
-        this.commandAlises.forEach((alias, commandName) => {
+        this.commandAlises.forEach((commandName, alias) => {
             const command = this.commands.get(commandName);
 
             if (!command) return;
